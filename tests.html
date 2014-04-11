@@ -10,18 +10,77 @@
 	  href="style.css"
       type="text/css"
       media="screen">
+    <!--jQuery for the Google maps show/hide-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+    $(document).ready(function(){
+      $("#hide1").click(function(){
+        $("#hide1").hide();
+        $("#show1").show();
+        $("#vid1").hide(500);
+      });
+      $("#show1").click(function(){
+        $("#hide1").show();
+        $("#show1").hide();
+        $("#vid1").show(500);
+      });
+      $("#hide2").click(function(){
+        $("#hide2").hide();
+        $("#show2").show();
+        $("#vid2").hide(500);
+      });
+      $("#show2").click(function(){
+        $("#hide2").show();
+        $("#show2").hide();
+        $("#vid2").show(500);
+      });
+      $("#hide3").click(function(){
+        $("#hide3").hide();
+        $("#show3").show();
+        $("#vid3").hide(500);
+      });
+      $("#show3").click(function(){
+        $("#hide3").show();
+        $("#show3").hide();
+        $("#vid3").show(500);
+      });
+    });
+    </script>
 
 	</head>
-	<header><h1>Web Usability Testing</h1><nav><a href = "suggestions.html">Suggestion Page</a></nav></header>
+	
+    <header>
+        <h1>Web Usability Testing</h1>
+        <nav>
+            <h3>Tests</h3>
+            <a href = "suggestions.html">Go To Suggestion Page</a>
+        </nav>
+    </header>
+    
     <body id = "content">
     
-    <span class="video" id="willsVideo">
+    <div id = "toggleSpan">
+        <button class = "vidButton" id = "show1">Show Vid 1</button>
+        <button class = "vidButton" id = "hide1">Hide Vid 1</button>
+        <button class = "vidButton" id = "show2">Show Vid 2</button>
+        <button class = "vidButton" id = "hide2">Hide Vid 2</button>
+        <button class = "vidButton" id = "show3">Show Vid 3</button>
+        <button class = "vidButton" id = "hide3">Hide Vid 3</button>
+    </div>
+        
+        
+        <span class="video" id="vid1">
 			<iframe width="560" height="315" src="//www.youtube.com/embed/XiGFIjFaVEo?rel=0" frameborder="0" allowfullscreen></iframe>
 		</span>
-		<span class = "video" id = "chrisVideo">
+		
+        
+        <span class = "video" id = "vid2">
 			<iframe width="560" height="315" src="//www.youtube.com/embed/Jww6jnLuvhM?rel=0" frameborder="0" allowfullscreen></iframe>
 		</span>
-		<span class = "video" id = "sarahVideo">
+		
+        
+        <span class = "video" id = "vid3">
 			<iframe width="560" height="315" src="//www.youtube.com/embed/7_DIBTQA_TU?rel=0" frameborder="0" allowfullscreen></iframe>
 		</span>
     

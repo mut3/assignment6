@@ -1,7 +1,16 @@
 a{text-decoration: none;}
+body
+{
+    margin: auto;
+    width:560px;
+}
 body img
 {
     width: 80%;
+}
+nav h3, nav a
+{
+    display: inline-block;
 }
 .abp
 {
@@ -11,3 +20,28 @@ body img
 {
     width: 60%;
 }
+
+
+/*Styling for the Toggle Video Buttons*/
+#hide1, #show2, #show3, #vid1{}
+#show1, #hide2, #hide3, #vid2, #vid3{display: none;}
+.video
+{
+    clear: left;
+    float: left;
+}
+.vidButton
+{
+    
+    padding:3px;
+    margin:.1em 47px;
+    text-align: center;
+    width: 90px;
+    
+}
+
+/*for the experimental script
+#blank1, #show2, #show3, #vid1{}
+#show1, #hide1, #hide2, #hide3, #blank2, #blank3, #vid2, #vid3{display: none;}
+*/
+    
