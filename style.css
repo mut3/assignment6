@@ -1,24 +1,40 @@
+*{font-family: sans-serif;}
+a,h1,h2,h3{font-family: serif;}
+h2{font-size: 1.25em;}
 a{text-decoration: none;}
-body
+
+#testsContent
 {
     margin: auto;
     width:560px;
 }
+header{text-align: center;}
 body img
 {
     width: 80%;
+    max-width: 785px;
 }
+nav{text-align: center;}
 nav h3, nav a
 {
     display: inline-block;
+    padding: .3em;
+    text-align: center;
+}
+nav a:visited
+{
+    color: blue;
 }
 .abp
 {
     width: 10%;
+    max-width: 80px
 }
 .adCode
 {
     width: 60%;
+    max-width: 600px
+    
 }
 
 
